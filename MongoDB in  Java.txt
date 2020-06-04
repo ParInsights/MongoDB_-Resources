@@ -1,0 +1,17 @@
+Resource for MongoDB adapter for the JSData Node.js ORM.
+
+Installation:
+npm install --save js-data@3 js-data-mongodb@2 mongodb@3 bson@3
+
+Usage:
+import { MongoDBAdapter } from 'js-data-mongodb';
+
+// Create an instance of MongoDBAdapter
+const adapter = new MongoDBAdapter({
+  uri: 'mongodb://localhost:27017'
+});
+
+// Other JSData setup hidden
+
+// Register the adapter instance
+store.registerAdapter('mongodb', adapter, { default: true });
